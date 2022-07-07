@@ -3,3 +3,407 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+/* Mobile Header */
+
+.navbar__container {
+  display: flex;
+  justify-content: space-between;
+  margin: 3em 2em;
+}
+
+.section__3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section__3__mobile__header {
+  font-weight: 1200;
+  font-size: 36px;
+}
+
+.section__3__mobile__header__context {
+  font-size: 18px;
+  color: #595959;
+  margin-bottom: 1em;
+}
+
+.section__3__desktop__header,
+.section__3__desktop__header__context {
+  display: none;
+}
+
+.get__started__btn {
+  background-color: #242dfe;
+  padding: 0.9em 5.2em;
+  border-radius: 6px;
+  color: white;
+  font-size: 15px;
+  border: none;
+}
+
+.getStarted__btn {
+  font-weight: 800;
+}
+
+.howIt__works__container {
+  font-size: 18px;
+  color: #595959;
+  background-color: white;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 1.5em;
+  margin-right: 1.5em;
+}
+
+.howIt__works__btn__content {
+  margin-bottom: 3em;
+}
+
+.howIt__works__content {
+  padding-left: 1em;
+}
+
+.star__imgs {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 50%;
+  margin-top: 3em;
+}
+
+.reviews {
+  text-align: center;
+  font-size: 17px;
+}
+
+._55 {
+  color: #595959;
+}
+
+.alt__to__reviews {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.dot {
+  color: #595959;
+}
+
+.company__logos {
+  margin-top: 5em;
+}
+
+.company__logos__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 30px;
+}
+
+/* Mobile Packages Section*/
+
+.packages__section__container {
+  margin-top: 5em;
+}
+
+.packages__header__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #242dfe;
+  padding-top: 2em;
+}
+
+.dashboard__benefits {
+  display: flex;
+  white-space: nowrap;
+  color: #e7e8fe;
+  font-size: 21px;
+  gap: 0.9em;
+  padding-bottom: 0.9em;
+}
+
+.track__dashboard__benefits {
+  margin-right: 3.6em;
+}
+
+.a-b__dashboard__benefits {
+  margin-right: 0.5em;
+}
+
+.packages__header {
+  color: #fff;
+  font-size: 46px;
+}
+
+.packages__mobile__content {
+  color: #e7e8fe;
+  font-size: 21.5px;
+  padding-bottom: 1.4em;
+}
+
+.dashboard__img {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 2em;
+  width: 90%;
+}
+
+.packages__startups {
+  margin-top: 3em;
+  margin-right: 1.5em;
+  margin-left: 1.5em;
+  padding-top: 1em;
+  background-color: #242dfe;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.packages__enterprises {
+  margin-top: 1em;
+  margin-right: 1.5em;
+  margin-left: 1.5em;
+  padding-top: 1em;
+  background-color: #242dfe;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.packages__enterprises__list,
+.packages__startups__list {
+  list-style-type: none;
+}
+
+.packages__enterprises__list span,
+.packages__startups__list span {
+  padding-left: 1em;
+}
+
+.packages__enterprises__list__item,
+.packages__startups__list__item {
+  margin-top: 1.2em;
+  font-size: 20px;
+}
+
+.packages__startups__header,
+.packages__enterprises__header {
+  font-size: 36px;
+}
+
+.startups__header {
+  margin-right: 3em;
+}
+
+.enterprises__header {
+  margin-right: 2em;
+}
+
+.packages__enterprises__content,
+.packages__startups__content {
+  font-size: 22px;
+  padding-bottom: 0.5em;
+}
+
+.final__list__item {
+  padding-bottom: 1.8em;
+}
+
+.packages {
+  margin-top: 3em;
+  margin-right: 1.5em;
+  margin-left: 1.5em;
+  padding-top: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.starter__package {
+  background-color: #242dfe;
+  border-radius: 10px;
+}
+
+.packages__benefits__header {
+  margin-right: 8em;
+}
+
+.pro__packages__benefits__header {
+  margin-right: 5em;
+}
+
+.package__type__starter {
+  color: white;
+  font-size: 20px;
+  font-weight: 100;
+  margin-right: 3em;
+  margin-bottom: -0.5em;
+  margin-top: 1em;
+}
+
+.package__type {
+  color: #595959;
+  margin-bottom: -0.5em;
+}
+
+.package__price {
+  color: #595959;
+  font-size: 56px;
+  font-weight: 800;
+}
+
+.package__price__starter {
+  font-size: 56px;
+  color: white;
+  font-weight: 800;
+}
+
+.starter__month {
+  font-size: 18px;
+}
+
+.month {
+  color: #9fa5b6;
+  font-size: 18px;
+}
+
+.starter__package__desc {
+  color: white;
+  font-size: 22px;
+}
+
+.package__desc {
+  color: #595959;
+  font-size: 22px;
+}
+
+.package__benefits {
+  list-style-type: none;
+}
+
+.package__benefits span {
+  font-size: 19px;
+  padding-left: 1em;
+}
+
+.pro__package__benefits span {
+  padding-left: 4em;
+}
+
+.package__benefits__basic__pro {
+  color: #595959;
+}
+
+.package__benefits__starter {
+  color: white;
+}
+
+/* .starter__benefits__text {
+} */
+
+.package__benefits li {
+  margin-right: 3.3em;
+  margin-top: 1.2em;
+}
+
+.starter__package__benefits__checkmark {
+  position: absolute;
+  margin-left: -12px;
+  margin-top: -3px;
+}
+
+.package__benefits__checkmark {
+  position: absolute;
+  margin-left: -20px;
+  margin-top: -2px;
+}
+
+.pro__package__benefits__checkmark {
+  position: absolute;
+  margin-left: 40px;
+  margin-top: -3px;
+}
+
+.starter__package__benefit__text span {
+  margin-left: 0.8em;
+}
+
+.subscribe__btn {
+  margin-top: 1em;
+  padding: 0.7em 5em;
+  background-color: #242dfe;
+  color: white;
+  font-size: 18px;
+  border-radius: 5px;
+  border: none;
+}
+
+.subscribe__btn__container {
+  display: flex;
+  justify-content: center;
+}
+
+.subscribe__btn__starter__container {
+}
+
+.subscribe__btn__starter {
+  margin-top: 1em;
+  margin-bottom: 1.8em;
+  padding: 0.7em 5em;
+  background-color: #fff;
+  color: #242dfe;
+  font-size: 18px;
+  border-radius: 5px;
+  border: none;
+}
+
+/* Mobile Footer Section */
+
+.footer__section {
+  margin-top: 5em;
+  padding-bottom: 4em;
+  padding-top: 4em;
+  background-color: #242dfe;
+  color: white;
+}
+
+.footer__container {
+  margin-left: 2em;
+}
+
+.footer__logo {
+  margin-bottom: 1em;
+}
+
+.footer__header__content {
+  margin-bottom: 2.2em;
+  font-size: 18px;
+}
+
+.footer__ul {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2em;
+  list-style-type: none;
+}
+
+.list__header {
+  font-weight: 600;
+  padding-bottom: 0.5em;
+  font-size: 18px;
+}
+
+.list__item {
+  color: #e7e8fe;
+  font-weight: 200;
+  padding-top: 0.5em;
+  font-size: 16px;
+}

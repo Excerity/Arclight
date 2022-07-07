@@ -4,11 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
   <body>
-    <header>
-      <nav>
+    <!-- Navbar Section -->
+    <header class="navbar__section">
+      <nav class="navbar__container">
         <img src="/Arclight Source Files/Assets/Logo.svg" alt="" />
         <img src="/Arclight Source Files/Assets/Hamburger Menu.svg" alt="" />
       </nav>
@@ -18,20 +20,20 @@
     <div class="section__2">
       <div class="Section__2__container">
         <img src="/Arclight Source Files/Assets/Map.svg" alt="" />
-        <img src="/Arclight Source Files/Assets/user01.svg" alt="" />
+        <!-- <img src="/Arclight Source Files/Assets/user01.svg" alt="" />
         <img src="/Arclight Source Files/Assets/user02.svg" alt="" />
-        <img src="/Arclight Source Files/Assets/user03.svg" alt="" />
+        <img src="/Arclight Source Files/Assets/user03.svg" alt="" /> -->
       </div>
     </div>
 
     <!-- Section 3 -->
     <div class="section__3">
       <div class="section__3__container">
-        <h2 class="section__3__mobile__header">
+        <h1 class="section__3__mobile__header">
           Affiliate tracking <br />
           software shouldn't <br />
           cost an arm and a leg.
-        </h2>
+        </h1>
         <h2 class="section__3__desktop__header">
           Affiliate tracking <br />
           software shouldn't cost <br />
@@ -50,22 +52,34 @@
           doesn't cost an arm and a leg.
         </p>
         <div class="get__started__btn__container">
-          <button class="get__started__btn">Get Started - it's free</button>
+          <button class="get__started__btn">
+            <span class="getStarted__btn"> Get started</span> - it's free
+          </button>
         </div>
-        <div class="howIt__works__btn__container">
-          <button class="howIt__works__btn">How it Works</button>
+        <div class="howIt__works__container">
+          <img
+            src="/Arclight Source Files/Assets/Play.svg"
+            class="play__img"
+            alt=""
+          />
+          <span class="howIt__works__content"> How It Works</span>
         </div>
-        <span>
-          <img src="/Arclight Source Files//Assets/Star.svg" alt="" />
-          <img src="/Arclight Source Files//Assets/Star.svg" alt="" />
-          <img src="/Arclight Source Files//Assets/Star.svg" alt="" />
-          <img src="/Arclight Source Files//Assets/Star.svg" alt="" />
-          <img src="/Arclight Source Files//Assets/Star.svg" alt=""
-        /></span>
-        <span
-          ><p>5/5</p>
-          <p>Alternative To Reviews</p>
-        </span>
+
+        <div class="star__imgs">
+          <span>
+            <img src="/Arclight Source Files//Assets/Star.svg" alt="" />
+            <img src="/Arclight Source Files//Assets/Star.svg" alt="" />
+            <img src="/Arclight Source Files//Assets/Star.svg" alt="" />
+            <img src="/Arclight Source Files//Assets/Star.svg" alt="" />
+            <img src="/Arclight Source Files//Assets/Star.svg" alt="" />
+          </span>
+        </div>
+
+        <p class="reviews">
+          <span class="_55">5/5</span>
+          <span class="dot">&bull;</span>
+          <span class="alt__to__reviews"> Alternative To Reviews</span>
+        </p>
       </div>
 
       <div class="company__logos">
@@ -83,167 +97,329 @@
     <!-- Packages Section-->
     <div class="packages__section">
       <div class="packages__section__container">
-
-        <div class="packages__header">
-        <h1 class="packages__header">
-          A powerful <br />
-          dashboard that <br />
-          tracks everything.
-        </h1>
-        <p class="packages__">
-          Decisions should be powered by data, <br />
-          and there's no better way to collect good <br />
-          data than our powerful dashboard.
-        </p>
-
-        <span>
-          <img src="/Arclight Source Files//Assets/Checkmark.svg" alt="" />
-          <p>Create and manage custom referral <br />links.</p>
-        </span>
-        <span></span>
-          <img src="/Arclight Source Files//Assets/Checkmark.svg" alt="" />
-          <p>
-            A/B test your campaigns for more <br />
-            accurate results
+        <div class="packages__header__container">
+          <h1 class="packages__header">
+            A powerful <br />
+            dashboard that <br />
+            tracks everything.
+          </h1>
+          <p class="packages__mobile__content">
+            Decisions should be powered by data, <br />
+            and there's no better way to collect good <br />
+            data than our powerful dashboard.
           </p>
-        </span>
-        <span>
-          <img src="/Arclight Source Files//Assets/Checkmark.svg" alt="" />
-          <p>Track all your campagins.</p>
-        </span>
 
-        <div class="packages__header__imgs">
-          <img src="/Arclight Source Files/Assets/Dashboard.png" alt="">
+          <div class="dashboard__benefits">
+            <img src="/Arclight Source Files//Assets/Checkmark.svg" alt="" />
+            <span>
+              <p>Create and manage custom referral <br />links.</p>
+            </span>
+          </div>
+
+          <div class="dashboard__benefits a-b__dashboard__benefits">
+            <img src="/Arclight Source Files//Assets/Checkmark.svg" alt="" />
+            <p>
+              A/B test your campaigns for more <br />
+              accurate results.
+            </p>
+          </div>
+
+          <div class="dashboard__benefits track__dashboard__benefits">
+            <img src="/Arclight Source Files//Assets/Checkmark.svg" alt="" />
+            <p>Track all your campagins.</p>
+          </div>
+
+          <div class="packages__header__imgs">
+            <img
+              src="/Arclight Source Files/Assets/Dashboard.png"
+              class="dashboard__img"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="packages__startups">
+          <h1 class="packages__startups__header startups__header">
+            For Startups
+          </h1>
+          <p class="packages__startups__content">
+            Not all companies are big, startups <br />
+            should have just as much <br />
+            opportunities as established <br />
+            entrerprises.
+          </p>
+          <ul class="packages__startups__list">
+            <li class="packages__startups__list__item">
+              <img
+                src="/Arclight Source Files//Assets/Checkmark.svg"
+                class="package__benefits__checkmark"
+                alt=""
+              />
+              <span>50% off all plans, forever.</span>
+            </li>
+
+            <li class="packages__startups__list__item">
+              <img
+                src="/Arclight Source Files//Assets/Checkmark.svg"
+                class="package__benefits__checkmark"
+                alt=""
+              />
+              <span>
+                Receive monthly offers for and
+                <br />
+                <span> expert support to help you </span>
+                <br />
+                <span> grow your referal program. </span>
+              </span>
+            </li>
+
+            <li class="packages__startups__list__item final__list__item">
+              <img
+                src="/Arclight Source Files//Assets/Checkmark.svg"
+                class="package__benefits__checkmark"
+                alt=""
+              />
+              <span>Access to our Founders Hub</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="packages__enterprises">
+          <h1 class="packages__enterprises__header enterprises__header">
+            For Enterprises
+          </h1>
+          <p class="packages__enterprises__content">
+            Just because your company is huge, <br />
+            doesn't mean you shouldn't benefit <br />
+            from a referral system.
+          </p>
+
+          <ul class="packages__enterprises__list">
+            <li class="packages__enterprises__list__item">
+              <img
+                src="/Arclight Source Files//Assets/Checkmark.svg"
+                class="package__benefits__checkmark"
+                alt=""
+              />
+              <span>10% off all plans, forever.</span>
+            </li>
+
+            <li class="packages__enterprises__list__item">
+              <img
+                src="/Arclight Source Files//Assets/Checkmark.svg"
+                class="package__benefits__checkmark"
+                alt=""
+              />
+              <span>Free consultation consultations </span>
+              <br />
+              <span>with our Marketing experts.</span>
+            </li>
+
+            <li class="packages__enterprises__list__item final__list__item">
+              <img
+                src="/Arclight Source Files//Assets/Checkmark.svg"
+                class="package__benefits__checkmark"
+                alt=""
+              />
+              <span>Access to our Enterprise Hub.</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="packages">
+          <div class="packages__benefits__header">
+            <h3 class="package__type">Basic</h3>
+
+            <p class="package__price">$39 <span class="month">/mo</span></p>
+          </div>
+          <p class="package__desc">
+            Suited for startups who are just <br />
+            starting out.
+          </p>
+          <ul class="package__benefits package__benefits__basic__pro">
+            <li class="pacakge__benefits__list__item">
+              <img
+                class="package__benefits__checkmark"
+                src="/Arclight Source Files//Assets/Checkmark.svg"
+                alt=""
+              />
+              <span> Unlimited customers </span>
+            </li>
+            <li>
+              <img
+                class="package__benefits__checkmark"
+                src="/Arclight Source Files//Assets/Checkmark.svg"
+                alt=""
+              />
+              <span>Dashboard & reports</span>
+            </li>
+            <li>
+              <img
+                class="package__benefits__checkmark"
+                src="/Arclight Source Files//Assets/Checkmark.svg"
+                alt=""
+              />
+              <span>Live chat support</span>
+            </li>
+            <li>
+              <img
+                class="package__benefits__checkmark"
+                src="/Arclight Source Files//Assets/Checkmark.svg"
+                alt=""
+              />
+              <span>Fraud Managment</span>
+            </li>
+          </ul>
+          <div class="subscribe__btn__container">
+            <button class="subscribe__btn">Subscribe</button>
+          </div>
+        </div>
+
+        <div class="packages starter__package">
+          <div class="packages__benefits__header">
+            <h3 class="package__type__starter">Starter</h3>
+            <p class="package__price__starter">
+              $59 <span class="starter__month">/mo</span>
+            </p>
+          </div>
+          <p class="starter__package__desc">
+            Suited for those experimenting <br />
+            with referral programs.
+          </p>
+          <ul class="package__benefits package__benefits__starter">
+            <li class="starter__package__benefit__text">
+              <img
+                class="starter__package__benefits__checkmark"
+                src="/Arclight Source Files//Assets/Checkmark.svg"
+                alt=""
+              />
+              <span>Migration services</span>
+            </li>
+            <li class="starter__package__benefit__text">
+              <img
+                class="starter__package__benefits__checkmark"
+                src="/Arclight Source Files//Assets/Checkmark.svg"
+                alt=""
+              />
+              <span> Onboarding manager </span>
+            </li>
+            <li class="starter__package__benefit__text">
+              <img
+                class="starter__package__benefits__checkmark"
+                src="/Arclight Source Files//Assets/Checkmark.svg"
+                alt=""
+              />
+              <span>Automation eatures</span>
+            </li>
+            <li class="starter__package__benefit__text">
+              <img
+                class="starter__package__benefits__checkmark"
+                src="/Arclight Source Files//Assets/Checkmark.svg"
+                alt=""
+              />
+              <span>Mass actions</span>
+            </li>
+          </ul>
+          <div class="subscribe__btn__starter__container">
+            <button class="subscribe__btn__starter">Subscribe</button>
+          </div>
+        </div>
+
+        <div class="packages starter__packages">
+          <div class="pro__packages__benefits__header">
+            <h3 class="package__type">Pro</h3>
+            <p class="package__price">$129<span class="month">/mo</span></p>
+          </div>
+          <p class="package__desc">
+            Suited for enterprises with<br />
+            established referral systems.
+          </p>
+          <ul
+            class="package__benefits pro__package__benefits package__benefits__basic__pro"
+          >
+            <li>
+              <img
+                class="pro__package__benefits__checkmark"
+                src="/Arclight Source Files/Assets/Checkmark.svg"
+                alt=""
+              />
+              <span> All previous plans plus: </span>
+            </li>
+            <li>
+              <img
+                class="pro__package__benefits__checkmark"
+                src="/Arclight Source Files/Assets/Checkmark.svg"
+                alt=""
+              />
+              <span> Remove 'Powered by' logo </span>
+            </li>
+            <li>
+              <img
+                class="pro__package__benefits__checkmark"
+                src="/Arclight Source Files/Assets/Checkmark.svg"
+                alt=""
+              />
+              <span>Expert 1-on-1s</span>
+            </li>
+            <li>
+              <img
+                class="pro__package__benefits__checkmark"
+                src="/Arclight Source Files/Assets/Checkmark.svg"
+                alt=""
+              />
+              <span>Unlimited referral links</span>
+            </li>
+          </ul>
+          <div class="subscribe__btn__container">
+            <button class="subscribe__btn">Subscribe</button>
+          </div>
         </div>
       </div>
-
-      <div class="packages__startups">
-        <h1>For Startups</h1>
-        <p>Not all companies are big, startups <br>
-        should have just as much <br>
-        opportunities as established <br>
-        entrerprises.</p>
-          <span><img src="/Arclight Source Files//Assets/Checkmark.svg" alt="">
-            <p>50% off all plans, forever.</p> 
-          </span>
-          <span><img src="/Arclight Source Files//Assets/Checkmark.svg" alt="">
-            <p>Receive monthly offers for and <br>
-            expert support to help you <br>
-          grow your referal program.</p> 
-          </span>
-          <span><img src="/Arclight Source Files//Assets/Checkmark.svg" alt="">
-            <p>Access to our Founders Hub.</p> 
-          </span>
-      </div>
-
-      <div class="packages__enterprises">
-        <h1>For Enterprises</h1>
-        <p>Just because your company is huge, <br>
-        doesn't mean you shouldn't benefit <br>
-        from a referral system.</p>
-        <span><img src="/Arclight Source Files//Assets/Checkmark.svg" alt="">
-        <p>10% off all plans, forever.</p>
-        </span>
-        <span><img src="/Arclight Source Files//Assets/Checkmark.svg" alt="">
-        <p>Free consultation consultations <br>
-        with our Marketing experts.</p>
-        </span>
-        <span><img src="/Arclight Source Files//Assets/Checkmark.svg" alt="">
-        <p>Access to our Enterprise Hub.</p>
-        </span>
-       
-      </div>
-
-      <div class="packages">
-        <h3 class="package__type">Basic</h3>
-        <span> <p class="package__price">$39</p> <p>/mo</p> </span>
-       <p>Suited for startups who are just <br>
-      starting out.</p>
-      <ul class="pacakge__benefits">
-        <li><img src="/Arclight Source Files//Assets/Checkmark.svg" alt="">Unlimited customers</li>
-        <li><img src="/Arclight Source Files//Assets/Checkmark.svg" alt="">Dashboard & reports</li>
-        <li><img src="/Arclight Source Files//Assets/Checkmark.svg" alt="">Live chat support</li>
-        <li><img src="/Arclight Source Files//Assets/Checkmark.svg" alt="">Fraud Managment</li>
-      </ul>
-      <button class="subscribe__btn">Subscribe</button>
-      </div>
-
-      <div class="packages">
-        <h3 class="package__type">Starter</h3>
-        <span> <p class="package__price">$59</p> <p>/mo</p> </span>
-       <p>Suited for those experimenting <br>
-      with referral programs.</p>
-      <ul class="pacakge__benefits">
-        <li><img src="/Arclight Source Files//Assets/Checkmark.svg" alt="">Migration services</li>
-        <li><img src="/Arclight Source Files//Assets/Checkmark.svg" alt="">Onboarding manager</li>
-        <li><img src="/Arclight Source Files//Assets/Checkmark.svg" alt="">Automation features</li>
-        <li><img src="/Arclight Source Files//Assets/Checkmark.svg" alt="">Mass actions</li>
-      </ul>
-      <button class="subscribe__btn">Subscribe</button>
-      </div>
-
-
-      <div class="packages starter__packages">
-        <h3 class="package__type">Pro</h3>
-        <span> <p class="package__price">$129</p> <p>/mo</p> </span>
-       <p>Suited for enterprises with<br>
-      established referral systems.</p>
-      <ul class="pacakge__benefits">
-        <li><img src="/Arclight Source Files/Assets/Checkmark.svg" alt="">All previous plans plus:</li>
-        <li><img src="/Arclight Source Files/Assets/Checkmark.svg" alt="">Remove 'Powered by' logo</li>
-        <li><img src="/Arclight Source Files/Assets/Checkmark.svg" alt="">Expert 1-on-1s</li>
-        <li><img src="/Arclight Source Files/Assets/Checkmark.svg" alt="">Unlimited referral links</li>
-      </ul>
-      <button class="subscribe__btn">Subscribe</button>
-      </div>
-      
-    </div>
-  </div>
-
-  <!-- Footer -->
-  <div class="footer__section">
-    <div class="footer__container">
-      <div class="footer__logo">
-      <img src="/Arclight Source Files/Assets/Logo.svg" alt="" />
     </div>
 
-    <p class="footer__header__content">
-      Keep track of all your affiliate marketing <br>
-      campaings in one place, and analyze <br>
-      how well they are doing. Best part? It <br>
-      doesn't cost an arm and a leg.
-    </p>
-    <div class="footer__links">
-      <ul>
-        <li class="list__header">Company</li>
-        <li class="list__item">About</li>
-        <li class="list__item">Careers</li>
-        <li class="list__item">Contact Us</li>
-      </ul>
+    <!-- Footer -->
+    <div class="footer__section">
+      <div class="footer__container">
+        <div class="footer__logo">
+          <img src="/Arclight Source Files/Assets/Logo White.svg" alt="" />
+        </div>
 
-      <ul>
-        <li class="list__header">Services</li>
-        <li class="list__item">API</li>
-        <li class="list__item">Custization</li>
-        <li class="list__item">Marketplace</li>
-      </ul>
+        <p class="footer__header__content">
+          Keep track of all your affiliate marketing <br />
+          campaings in one place, and analyze <br />
+          how well they are doing. Best part? It <br />
+          doesn't cost an arm and a leg.
+        </p>
+        <div class="footer__links">
+          <ul class="footer__ul">
+            <li class="list__header">Company</li>
+            <li class="list__item">About</li>
+            <li class="list__item">Careers</li>
+            <li class="list__item">Contact Us</li>
+          </ul>
 
-      <ul>
-        <li class="list__header">Resources</li>
-        <li class="list__item">Blog</li>
-        <li class="list__item">Case Studies</li>
-        <li class="list__item">Press</li>
-      </ul>
+          <ul class="footer__ul">
+            <li class="list__header">Services</li>
+            <li class="list__item">API</li>
+            <li class="list__item">Custization</li>
+            <li class="list__item">Marketplace</li>
+          </ul>
 
-      <ul>
-        <li class="list__header">Privacy</li>
-        <li class="list__item">Terms & Conditions</li>
-        <li class="list__item">Privacy Policy</li>
-        <li class="list__item">User Agreement</li>
-      </ul>
+          <ul class="footer__ul">
+            <li class="list__header">Resources</li>
+            <li class="list__item">Blog</li>
+            <li class="list__item">Case Studies</li>
+            <li class="list__item">Press</li>
+          </ul>
+
+          <ul class="footer__ul">
+            <li class="list__header">Privacy</li>
+            <li class="list__item">Terms & Conditions</li>
+            <li class="list__item">Privacy Policy</li>
+            <li class="list__item">User Agreement</li>
+          </ul>
+        </div>
+      </div>
     </div>
-   
-    </div>
-  </div>
   </body>
 </html>
